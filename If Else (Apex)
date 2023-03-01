@@ -1,0 +1,24 @@
+Boolean fazSol = true;
+Boolean fazChuva = false;
+Boolean estaTrabalhando = false;
+Boolean abrirProtecao = false;
+Boolean temFesta;
+String comFesta = 'Tem festa';
+String semFesta = 'Sem festa';
+
+if(fazChuva == true && estaTrabalhando == true)
+{
+    abrirProtecao = true;
+    temFesta = false;
+    system.debug(semFesta);
+}
+	else if(fazSol == true && estaTrabalhando ==false && fazChuva == false)
+    {
+        temFesta = true;
+        system.debug(comFesta);
+    }
+else
+{
+    temFesta = false;
+    system.debug('Else' + semFesta);
+}
