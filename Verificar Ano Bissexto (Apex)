@@ -1,0 +1,21 @@
+Integer ano = 2200;
+
+
+if ((Math.mod(ano,4) == 0) && (Math.mod(ano,400) == 0) 
+    && (Math.mod(ano,100) != 0)){
+    system.debug('Ano bissexto! (dividido por 4 e por 400)');
+}
+	else if ((Math.mod(ano,4) == 0) && (Math.mod(ano,100) == 0) 
+             && (Math.mod(ano,400) != 0) ){
+        system.debug('Ano normal! (dividido por 4 e por 100)');
+}
+	else if ((Math.mod(ano,4) == 0) && (Math.mod(ano,100) == 0)
+    && (Math.mod(ano,400) == 0)){
+                  system.debug('Ano bissexto! (dividido por 4, por 100 e por 400)');}
+
+	else if ((Math.mod(ano,4) == 0) && (Math.mod(ano,100) != 0)) { 
+    system.debug('Bissexto! (dividido por 4, porém não por 100)');
+}
+else{
+    system.debug('Ano normal! (else)');
+}
