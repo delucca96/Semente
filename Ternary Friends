@@ -1,0 +1,25 @@
+final Integer oneSlice = 8;
+final Integer twoThreeSlice = 7;
+final Integer moreThreeSlice = 6;
+
+Integer ross = 3;
+Integer chandler = 1;
+Integer joey = 4;
+
+Integer rossHasToPay = ross == 1 ? ross*oneSlice :
+	  		(ross <= 3 ? ross*twoThreeSlice :
+		 		 ross*moreThreeSlice);
+
+system.debug('Ross has to pay: R$ ' + rossHasToPay);    
+
+Integer chandlerHasToPay = chandler == 1 ? chandler*oneSlice :
+	  		(chandler <= 3 ? chandler*twoThreeSlice :
+		 		 chandler*moreThreeSlice);
+                     
+system.debug('Chandler has to pay: R$ ' + chandlerHasToPay);
+
+Integer joeyHasToPay = joey == 1 ? joey*oneSlice :
+	  		(joey <= 3 ? joey*twoThreeSlice :
+		 		 joey*moreThreeSlice);
+                     
+system.debug('Joey has to pay: R$ ' +joeyHasToPay);
